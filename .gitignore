@@ -3,6 +3,8 @@ node_modules/
 
 # environment variables
 .env
+.env.*
+!.env.example
 
 # logs
 logs
@@ -13,22 +15,26 @@ npm-debug.log*
 build/
 dist/
 
-# WebStorm (Ide utilizada no desenvolvimento)
+# coverage
+coverage/
+
+# temporary files
+.tmp/
+tmp/
+temp/
+
+# cache
+.pnpm-store/
+.yarn/
+.npm/
+
+# IDEs
 .idea/
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# coverage
-coverage/
-
-# temporary files
-tmp/
-temp/
-
 # Docker
 .docker/
-
-# package managers
-.pnpm-store/
