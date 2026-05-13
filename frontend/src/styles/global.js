@@ -1,19 +1,30 @@
 import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
-    
+    :root {
+        color-scheme: light;
+    }
+
     * {
         margin: 0;
         padding: 0;
-        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     }
-    
+
     body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        background-color: #f2f2f2;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+        color: #0f172a;
+    }
+
+    #root {
+        min-height: 100vh;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 `;
 
